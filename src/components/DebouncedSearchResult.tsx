@@ -19,7 +19,7 @@ type PackagesList = {
   content: string;
 }[];
 
-function Search() {
+function DebouncedSearchResult() {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [packagesList, setPackagesList] = useState<PackagesList>([]);
 
@@ -64,4 +64,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default DebouncedSearchResult;
